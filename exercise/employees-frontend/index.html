@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Employee Payroll Srping View</title>
+    <style>
+        th, td, p, input 
+        {
+            font:14px Verdana;
+        }
+        table, th, td 
+        {
+            border: solid 1px #DDD;
+            border-collapse: collapse;
+            padding: 2px 3px;
+            text-align: center;
+        }
+        th 
+        {
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="name" name="name" placeholder="Name" />
+    <input type="text" id="role" name="role" placeholder="Role" />
+    <button onclick="addEmployee()">Add</button>
+    <br>
+    <br>
+    <button onclick="getEmployee()">Get</button>
+    <p id="showData"></p>
+    <br>
+    <br>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
